@@ -2,11 +2,51 @@
 <div class="sign-up-page-container">
     <app-navigation-bar></app-navigation-bar>
 
-    <form></form>
+    <form class="sign-up-form" [formGroup]="signUpFormGroup">
+        <input
+        type="text"
+        formControlName = "firstName"
+        placeholder="First Name"/>
+
+        <input
+        type="text"
+        formControlName = "lastName"
+        placeholder="Last Name"/>
+
+        <input
+        type="email"
+        formControlName = "firstName"
+        placeholder="Email"/>
+
+        <input
+        type="date"
+        formControlName = "birthDate"
+        placeholder="BirthDay"/>
+
+        <input
+        type="password"
+        formControlName = "Password"
+        placeholder="Password"/>
+
+        <input
+        type="password"
+        formControlName = "confirmPassword"
+        placeholder="Confirm Password"/>
+
+        <input
+        type="button"
+        value="Sign Up"
+        />
+
+
+    </form>
 
 
 
-    <app-footer></app-footer>
+    <div class="footer-container">
+        <app-footer></app-footer>
+    </div>
+    
 
 
 </div>

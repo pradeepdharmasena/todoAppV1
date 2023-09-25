@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up-page',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-up-page.component.scss']
 })
 export class SignUpPageComponent {
+
+  signUpFormGroup = new FormGroup({
+    firstName : new FormControl(''),
+    lastName : new FormControl(''),
+    email : new FormControl(''),
+    confirmPassword : new FormControl(''),
+    password : new FormControl(''),
+  })
 
 }
