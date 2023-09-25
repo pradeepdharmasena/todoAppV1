@@ -1,0 +1,26 @@
+<div class="sign-in-page-container">
+
+    <app-navigation-bar></app-navigation-bar>
+
+        <form class="sign-in-form" [formGroup]="signInForm">
+            <input 
+            class="sign-in-form-input"
+            type="email"
+            placeholder="Email"
+            formControlName = "email"
+            />
+            <input
+            class="sign-in-form-input"
+            type="password"
+            placeholder="Password"
+            formControlName = "password"
+            />
+            <input
+            class="sign-in-form-input"
+            type="button"
+            value="Submit"
+            />
+        </form>
+    <app-footer></app-footer>
+</div>
+
