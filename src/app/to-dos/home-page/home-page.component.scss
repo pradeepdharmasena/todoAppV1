@@ -1,0 +1,24 @@
+
+.home-page-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(198, 198, 198, 1);
+}
+.plus-sign-image{
+    background-color: rgba(198, 198, 198, 1);
+    background-image: url("../../../assets/images/icons/plus_sign_green.png");
+    background-size: 100% 100%; 
+    width: 100px; /* Set the width and height according to your design */
+    height:100px;
+    color: white; /* Text color */
+    border: none; /* Remove button border if needed */
+    border-radius:50px;
+    cursor: pointer;
+    align-self: center;
+    margin: 10px;
+}
+
+.plus-sign-image:hover{
+    border: solid rgb(2, 245, 19);
+}
+
