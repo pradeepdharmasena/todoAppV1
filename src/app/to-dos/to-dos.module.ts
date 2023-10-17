@@ -4,13 +4,17 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SharedModule } from "../shared/shared.module";
 import { RouterModule } from '@angular/router';
 import { NewToDoPageComponent } from './new-to-do-page/new-to-do-page.component';
+import { ToDoCardComponent } from './to-do-card/to-do-card.component';
+import { ToDoVeiwPageComponent } from './to-do-veiw-page/to-do-veiw-page.component';
 
 
 
 @NgModule({
     declarations: [
         HomePageComponent,
-        NewToDoPageComponent
+        NewToDoPageComponent,
+        ToDoCardComponent,
+        ToDoVeiwPageComponent
     ],
     exports: [
         HomePageComponent

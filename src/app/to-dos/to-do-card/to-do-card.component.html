@@ -1,0 +1,28 @@
+<div class="todo-card-container">
+    <div class="priority-flag">
+        <img class="priority_flag-image" src = '{{"../../../assets/images/icons/priority_flags/"+ todo.Priority + ".png"}}' />
+    </div>
+    <div class="todo-card-content" (click)="loadViewer()">
+        <div class="blured-description"></div>
+        <div class="blured-title"></div>
+        <p class="todo-card-title">
+            {{ todo.Title }}
+        </p>
+        <div class="todo-card-description">
+            <p>
+                {{todo.Description}}
+            </p>
+        </div>
+    </div>
+    <div class="todo-card-edit-tab">
+        <input 
+        class="todo-edit-button"
+        type="button"
+        (click)="loadEditor()"
+        />
+        <p class="dued-date">{{todo.DuedDate.getDay() +"/" +todo.DuedDate.getMonth()}}</p>
+    </div>
+</div>
+
+
+

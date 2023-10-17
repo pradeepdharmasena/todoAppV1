@@ -4,21 +4,27 @@
     flex-direction: column;
     background-color: rgba(198, 198, 198, 1);
 }
-.plus-sign-image{
+.add-todo-button{
     background-color: rgba(198, 198, 198, 1);
     background-image: url("../../../assets/images/icons/plus_sign_green.png");
     background-size: 100% 100%; 
-    width: 100px; /* Set the width and height according to your design */
+    width: 100px; 
     height:100px;
-    color: white; /* Text color */
-    border: none; /* Remove button border if needed */
+    color: white; 
+    border: none; 
     border-radius:50px;
     cursor: pointer;
     align-self: center;
     margin: 10px;
 }
 
-.plus-sign-image:hover{
+.add-todo-button:hover{
     border: solid rgb(2, 245, 19);
+}
+
+.todo-card-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
