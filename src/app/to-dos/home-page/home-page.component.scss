@@ -1,0 +1,30 @@
+
+.home-page-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(198, 198, 198, 1);
+}
+.add-todo-button{
+    background-color: rgba(198, 198, 198, 1);
+    background-image: url("../../../assets/images/icons/plus_sign_green.png");
+    background-size: 100% 100%; 
+    width: 100px; 
+    height:100px;
+    color: white; 
+    border: none; 
+    border-radius:50px;
+    cursor: pointer;
+    align-self: center;
+    margin: 10px;
+}
+
+.add-todo-button:hover{
+    border: solid rgb(2, 245, 19);
+}
+
+.todo-card-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+

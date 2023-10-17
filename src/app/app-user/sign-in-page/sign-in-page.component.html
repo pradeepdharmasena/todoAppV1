@@ -2,7 +2,7 @@
 
     <app-navigation-bar></app-navigation-bar>
 
-        <form class="sign-in-form" [formGroup]="signInForm">
+        <form class="sign-in-form" [formGroup]="signInForm" (ngSubmit)="validateAppUser()">
             <input 
             class="sign-in-form-input"
             type="email"
@@ -17,7 +17,7 @@
             />
             <input
             class="sign-in-form-input"
-            type="button"
+            type="submit"
             value="Submit"
             />
         </form>

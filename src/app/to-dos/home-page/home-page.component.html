@@ -1,0 +1,8 @@
+<div class="home-page-container">
+    <app-navigation-bar></app-navigation-bar>
+    <input type="button" class="add-todo-button">
+
+    <app-to-do-card *ngFor="let todo of todoList" [todo]="todo" class="todo-card-list"></app-to-do-card>
+    
+    <app-footer></app-footer>
+</div>
