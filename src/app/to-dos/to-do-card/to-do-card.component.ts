@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Todo } from 'src/app/Models/ToDo';
+import { Todo } from 'src/app/models/ToDo';
 
 @Component({
   selector: 'app-to-do-card',

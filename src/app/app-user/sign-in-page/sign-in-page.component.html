@@ -1,5 +1,5 @@
 <div class="sign-in-page-container">
-
+    <app-spinner></app-spinner>
     <app-navigation-bar></app-navigation-bar>
 
         <form class="sign-in-form" [formGroup]="signInForm" (ngSubmit)="validateAppUser()">
@@ -14,6 +14,7 @@
             type="password"
             placeholder="Password"
             formControlName = "password"
+           
             />
             <input
             class="sign-in-form-input"
@@ -21,6 +22,10 @@
             value="Submit"
             />
         </form>
-    <app-footer></app-footer>
+        <div *ngIf="errorOccurd" class="error-block">
+            <span>Your Password or email may Wrong.</span>
+            <span>Please Check and Try again.</span>
+        </div>
+    <app-footer class="sign-in-footer"></app-footer>
 </div>
 

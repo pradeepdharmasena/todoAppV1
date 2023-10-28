@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AuthanticationApiService } from './api/authantication-api.service';
 import { Observable, map, of } from 'rxjs';
+import { AppUser } from 'src/app/models/AppUser';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ import { Observable, map, of } from 'rxjs';
 
 
 export class AuthanitcationService {
+  
   private authToken = '';
 
   constructor(private authanticationApiService: AuthanticationApiService) {}
@@ -18,13 +20,14 @@ export class AuthanitcationService {
     } else {
       return this.authanticationApiService.getToken(email, password).pipe(
         map((response: any) => {
-          // Assuming the token is a string property in the response
-          //this.authToken = response.token;
           console.log("token : ",  response)
+          this.authToken = response.token;
+          localStorage.setItem("token", this.authToken);
           return this.authToken;
         })
       );
     }
   }
+
 }
 
